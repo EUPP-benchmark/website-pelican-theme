@@ -33,7 +33,7 @@
     <nav>
       <ul class="list">
           <li>
-            <a target="_self" href="news.html"> News </a>
+            <a target="{{ get_target(SITEURL) }}" href="{{ SITEURL }}/news.html">News</a>
           </li>
         {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
         {% macro get_target(link) -%}
